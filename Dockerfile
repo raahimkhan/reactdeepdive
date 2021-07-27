@@ -14,7 +14,7 @@ RUN apt-get update &&\
     # Installing Yarn
     npm install --global yarn &&\
     # Installing packages from package.json
-    cd foobar && npm install --silent && npm run flow init
+    cd foobar && npm install --silent && npm install axios --save && npm run flow init
 
 # Changing working directory (uncomment if working locally)
 # WORKDIR '/foobar'
